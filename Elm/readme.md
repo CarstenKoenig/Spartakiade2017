@@ -1,35 +1,31 @@
-% **Workshop: ELM**
+# Workshop: ELM
 
-\newpage
+## Linksammlung
 
-# Linksammlung
-
-## Elm
+### Elm
 - [Homepage](http://elm-lang.org/)
 - [Packages Docs](http://package.elm-lang.org/)
 - [Syntax](http://elm-lang.org/docs/syntax)
 - [Javascript -> Elm](http://elm-lang.org/docs/from-javascript)
 - [Elm Bootstrap](http://elm-bootstrap.info/)
 
-## nützliche Docs
+### nützliche Docs
 - [Elm Core](http://package.elm-lang.org/packages/elm-lang/core/latest/)
 - [Elm Html](http://package.elm-lang.org/packages/elm-lang/html/latest/)
 - [Elm Bootstrap Docs](http://package.elm-lang.org/packages/rundis/elm-bootstrap/latest)
 
-## Hintergrund
+### Hintergrund
 - [Elm Records](http://elm-lang.org/docs/records)
 - [the Elm Architecture](https://guide.elm-lang.org/architecture/)
 
-## Tools
+### Tools
 - [Installation](https://guide.elm-lang.org/install.html)
 - [elm-format](https://github.com/avh4/elm-format#installation)
 - [elm-oracle](https://github.com/ElmCast/elm-oracle)
 - [vscode-elm](https://github.com/sbrink/vscode-elm)
 
-\newpage
-
-# Installation
-## Elm
+## Installation
+### Elm
 Elm selbst kann unter:
 
 - **Windows** entweder als [Installer](http://install.elm-lang.org/Elm-Platform-0.18.exe) oder über [NPM](https://www.npmjs.com/package/elm) installiert werden.
@@ -50,7 +46,7 @@ bzw.
 sudo install -g elm
 ```
 
-## Elm Format
+### Elm Format
 *Elm Format* ist sehr nützlich (automatische Quellcodeformatierung) und ich empfehle es mit zu installieren, auch wenn es am Anfang etwas
 gewöhnungsbedürftig ist.
 
@@ -62,7 +58,7 @@ Die Binaries findet man für:
 - **Mac** [hier](https://github.com/avh4/elm-format/releases/download/0.5.2-alpha/elm-format-0.18-0.5.2-alpha-mac-x64.tgz)
 - **Linux** [hier](https://github.com/avh4/elm-format/releases/download/0.5.2-alpha/elm-format-0.18-0.5.2-alpha-linux-x64.tgz)
 
-## Elm Oracle
+### Elm Oracle
 Manche Editor-Plugins (*elm-vim*, *atom-elm*, *elm-mode* (Emacs), *Elm.tmLanguage* (Sublime), *elm-light* (LightTable)) benötigen *Elm Oracle*
 
 Die Installation läuft über **NPM**:
@@ -77,12 +73,12 @@ bzw.
 sudo npm install -g elm-oracle
 ```
 
-## Editorsupport
-### VS.code
+### Editorsupport
+#### VS.code
 siehe [vscode-elm](https://marketplace.visualstudio.com/items?itemName=sbrink.elm)
 für *elm-format* kann noch [VS.code elm-format](https://marketplace.visualstudio.com/items?itemName=abadi199.elm-format) installiert werden
 
-### Emacs
+#### Emacs
 ist in [**MELPA** (`elm-mode`)](https://github.com/jcollard/elm-mode) verfügbar, *elm-oracle* und *elm-format* sollten installiert sein.
 
 hier ist der relevante Teil meiner Emacs-Config:
@@ -112,5 +108,5 @@ außerdem habe ich folgendes in `customize-mode` (bzw. `.gnu-emacs-custom`), dam
 ```
 
 
-## andere
+### andere
 siehe "Configure Your Editor" [hier](https://guide.elm-lang.org/install.html)
