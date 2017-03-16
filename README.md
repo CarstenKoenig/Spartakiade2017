@@ -10,9 +10,9 @@ Twitter: http://twitter.com/spartakiade_org
 
 ## Bitte mitbringen / vorbereiten
 
-[ ] Rechner mit installierter Haskell bzw. Elm Umgebung (siehe unten)
-[ ] Elm-Workshop: Wenn ihr wollt: Ideen für eigene kleinen Anwendungen
-[ ] gute Laune, Fragen, was auch immer
+- [ ] Rechner mit installierter Haskell bzw. Elm Umgebung (siehe unten)
+- [ ] Elm-Workshop: Wenn ihr wollt: Ideen für eigene kleinen Anwendungen
+- [ ] gute Laune, Fragen, was auch immer
 
 ## Infos / Installation
 Infos, Linkssamlungen und Installationsleitungen:
