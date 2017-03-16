@@ -1,6 +1,13 @@
 # Spartakiade2017
 Materialien zu meinen Haskell und Elm Workshops auf der Spartakiade 2017
 
+## Infos / Installation
+Infos, Linkssamlungen und Installationsanleitungen:
+
+- [Haskell Workshop](./Haskell/readme.md) am Samstag
+- [Elm Workshop](./Elm/readme.md) am Sonntag
+
+
 ## Gemeinsames Projekt
 
 Ursprünglich hatte ich **Uno** angekündigt - leider hat sich herausgestellt, 
