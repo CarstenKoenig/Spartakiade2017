@@ -96,6 +96,17 @@ data Versuch =
 instance ToJSON Versuch
 
 
+example :: IO ZustandDto
+example = do
+  nxt <- Time.addUTCTime 60 <$> Time.getCurrentTime
+  return $ ZustandDto (Just runde) nxt
+  where
+    runde = RundeDto [versuch1, versuch2] heraus
+    heraus = Game.Challange 100 [2,3,4,5,6]
+    versuch1 = Versuch (Just 90) 5 (Game.Player "Spieler1")
+    versuch2 = Versuch Nothing 0 (Game.Player "Spiele2r")
+    
+
 gameLoop :: Chan ZustandDto -> MVar Game.PlayersMap -> MVar GameState -> IO ThreadId
 gameLoop chan psv gsv = forkIO $ forever $ do
   gs <- MVar.readMVar gsv
@@ -252,6 +263,10 @@ spockApp = do
         json player
       Nothing ->
         setStatus HttpStatus.noContent204
+
+  get "example" $ do
+    ex <- liftIO example
+    json ex
         
         
 
