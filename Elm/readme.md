@@ -113,8 +113,9 @@ siehe "Configure Your Editor" [hier](https://guide.elm-lang.org/install.html)
 
 
 ## Starter
-Um schnell einen Startpunkt für eine eigene Anwendung zu haben, findet
-ihr hier zwei *Startprojekte*:
+Um schnell einen Startpunkt für eine eigene Anwendung zu haben, findest
+Du im Verzeichnis `./Starter/Demo` bzw. `./Starter/Bootstrap` zwei
+Startpunkte für eigene Projekte:
 
-- die [Elm Demo-App](./Starter/Demo)
-- [Bootstrap Starter-App](./Starter/Bootstrap)
+- die [Elm Demo-App](./Starter/Demo) - einfacher Ausgangspunkt ohne `Cmd`/`Sub`
+- [Bootstrap Starter-App](./Starter/Bootstrap) - inkl. Bootsrap mit `Cmd`/`Sub`
