@@ -1,0 +1,70 @@
+name:                Countdown
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/CarstenKoenig/Countdown#readme
+license:             MIT
+license-file:        LICENSE
+author:              Carsten König
+maintainer:          Carsten@gettingsharper.de
+copyright:           2017 Carsten König
+category:            Web
+build-type:          Simple
+extra-source-files:  readme.md
+cabal-version:       >=1.10
+
+
+library
+  exposed-modules:     Countdown.Expressions
+                     , Countdown.Parser
+                     , Countdown.Game
+                     , Countdown.Game.Players
+  other-modules:       Countdown.Game.Attempts
+                     , Countdown.Game.Round
+                     , Countdown.Game.Random
+                     , Countdown.Game.Challanges
+                     , Countdown.Lists
+
+  build-depends:       base >= 4.7 && < 5
+                     , aeson
+                     , containers
+                     , MonadRandom
+                     , parsec
+                     , random
+                     , text
+                     , mtl
+  hs-source-dirs:      src/lib
+  default-language:    Haskell2010
+                     
+                     
+executable Countdown
+  hs-source-dirs:      src/web
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , Countdown
+                     , Spock >= 0.11
+                     , containers
+                     , aeson
+                     , mtl
+                     , text
+                     , wai >= 3.2.1.1 && < 3.3
+                     , wai-middleware-static >= 0.8.1 && < 0.9
+                     , warp
+                     , http-types
+                     , websockets
+                     , wai-websockets >= 3.0 && < 3.1
+                     , time
+
+                     
+test-suite CountdownTests
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall
+  hs-source-dirs:      src/test
+  main-is:             Spec.hs
+  other-modules:       Countdown.AttemptsSpecs
+                     , Countdown.ParserSpec
+  default-language:    Haskell2010
+  build-depends:       base >=4.7 && < 5
+                     , Countdown
+                     , hspec   == 2.*                     

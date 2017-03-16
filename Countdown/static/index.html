@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Countdown-Game</title>
+</head>
+
+<body>
+<div id="main"></div>
+<script src="client.js"></script>
+<script>
+  var node = document.getElementById('main');
+  var loc = window.location;
+  var url = "ws://" + loc.host;
+  var app = Elm.Main.embed(node, {
+     websocketUrl: url
+  });
+</script>
+</body>
+
+</html>
