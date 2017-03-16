@@ -10,7 +10,7 @@
 
 # Kompilieren
 
-## Elm (optional)
+## Elm
 
     cd Countdown/client
     elm make main.elm --output ../static/client.js 
