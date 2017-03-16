@@ -24,7 +24,7 @@
 
 ### Stack
 Ich empfehle Haskell nur über das [**Stack Tool**](https://docs.haskellstack.org/en/stable/README/) zu installieren
-(also nicht die Platform oder den GHC direkt).
+(also nicht die Plattform oder den GHC direkt).
 
 In jeden Fall solltet ihr nach der Installation mit
 
@@ -62,7 +62,7 @@ schauen.
 Intero ist meiner Meinung nach aktuelle die beste Möglichkeit guten
 Editor-Support für Haskell zu bekommen.
 
-Eine Installationsanleitung findet ihr [hier](https://haskell-lang.org/intero).
+Eine Installationsleitung findet ihr [hier](https://haskell-lang.org/intero).
 
 Übrigens: dort steht viel über Emacs - das unten vorgestellte *VS.code* Plugin
 nutzt aber auch Intero.
@@ -72,7 +72,7 @@ nutzt aber auch Intero.
 #### VS Code
 Ich benutze [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly)
 
-Installationsanleitung findet ihr unter dem Link.
+Installationsleitung findet ihr unter dem Link.
 
 Im Prinzip läuft es aber darauf hinaus *Stack* (siehe oben) zu installieren
 und dann *Intero* und *Quickcheck* per:
@@ -85,7 +85,7 @@ Auf Linux/MacOS könnt ihr noch
 
     stack install stack-run
     
-installieren, dass den praktischen `stack run` befehl beinhaltet,
+installieren, dass den praktischen `stack run` Befehl beinhaltet,
 das geht aber glaube ich auf Windows nicht.
 
 
