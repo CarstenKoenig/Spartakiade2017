@@ -110,3 +110,11 @@ außerdem habe ich folgendes in `customize-mode` (bzw. `.gnu-emacs-custom`), dam
 
 ### andere
 siehe "Configure Your Editor" [hier](https://guide.elm-lang.org/install.html)
+
+
+## Starter
+Um schnell einen Startpunkt für eine eigene Anwendung zu haben, findet
+ihr hier zwei *Startprojekte*:
+
+- die [Elm Demo-App](./Elm/Starter/Demo)
+- [Bootstrap Starter-App](./Elm/Starter/Bootstrap)
