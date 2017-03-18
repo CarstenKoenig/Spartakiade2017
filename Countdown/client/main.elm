@@ -96,8 +96,9 @@ update msg model =
             model ! [ Cmd.none ]
 
         Tick zeit ->
-            { model | zeit = zeit } ! [ Komm.getSpielZustand HttpError UpdateZustand ]
+            { model | zeit = zeit } ! []
 
+        -- [ Komm.getSpielZustand HttpError UpdateZustand ]
         HttpError fehler ->
             model
                 ! [ Cmd.none ]

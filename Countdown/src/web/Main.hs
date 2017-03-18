@@ -60,7 +60,8 @@ mainApp chan cfg = do
     wsApp :: ServerApp
     wsApp pending_conn = do
       conn <- Ws.acceptRequest pending_conn
-      websocketLoop conn chan
+      forkedChan <- liftIO $ Chan.dupChan chan
+      websocketLoop conn forkedChan
 
 
 spockApp :: SpockM () MySession MyAppState ()
