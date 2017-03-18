@@ -1,6 +1,4 @@
-% **Workshop: Haskell**
-
-\newpage
+# Workshop: Haskell
 
 # Linksammlung
 
@@ -21,8 +19,6 @@
 - [Intero](https://haskell-lang.org/intero)
 - [VS.Code & Haskelly](https://github.com/haskelly-dev/Haskelly)
 
-
-\newpage
 
 # Einführung
 
