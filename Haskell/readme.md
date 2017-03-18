@@ -1,5 +1,9 @@
 # Workshop: Haskell
 
+## Ausgangsmaterial Workshop
+findet ihr [hier](./Workshop.md)
+
+
 ## Linksammlung
 
 ### Tools
