@@ -1,5 +1,8 @@
 # Workshop: ELM
 
+## Skript
+Mein Skript aus dem Workshop findet ihr [hier](./Workshop.md)
+
 ## Linksammlung
 
 ### Elm
