@@ -3,6 +3,25 @@
 ## Skript
 Mein Skript aus dem Workshop findet ihr [hier](./Workshop.md)
 
+## Beispiel-Apps
+
+## Taschenrechner
+[hier](./Calc)
+
+## Uhr
+[hier](./Uhr)
+
+## Tests
+Testframework / Benutzung [hier](./Tests)
+
+Ihr braucht dazu noch das [`elm-test` Tool](http://package.elm-lang.org/packages/elm-community/elm-test/latest)
+
+Einfach im Verzeichnis
+
+    elm test
+	
+aufrufen.
+
 ## Linksammlung
 
 ### Elm
