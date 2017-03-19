@@ -15,7 +15,9 @@ type alias Knopf =
 
 
 type alias Model =
-    Int
+    { aktuelleZahl : Int
+    , anstehendeOperation : Int -> Int
+    }
 
 
 type Message
@@ -35,7 +37,7 @@ type Operator
 main : Program Never Model Message
 main =
     Html.beginnerProgram
-        { model = 0
+        { model = Model 0 identity
         , view = view
         , update = update
         }
@@ -43,7 +45,33 @@ main =
 
 update : Message -> Model -> Model
 update msg model =
-    model
+    case msg of
+        ZifferGedrueckt z ->
+            { model
+                | aktuelleZahl =
+                    model.aktuelleZahl * 10 + z
+            }
+
+        OperatorGedrueckt IstGleich ->
+            { model
+                | aktuelleZahl =
+                    model.anstehendeOperation
+                        model.aktuelleZahl
+                , anstehendeOperation =
+                    identity
+            }
+
+        OperatorGedrueckt Plus ->
+            { model
+                | aktuelleZahl = 0
+                , anstehendeOperation =
+                    \x ->
+                        model.anstehendeOperation model.aktuelleZahl
+                            + x
+            }
+
+        _ ->
+            model
 
 
 view : Model -> Html.Html Message
@@ -56,7 +84,7 @@ view model =
             Knopf t (OperatorGedrueckt o)
     in
         Html.div []
-            [ display model
+            [ display model.aktuelleZahl
             , tastatur
                 [ [ zif 7, zif 8, zif 9, op "*" Mal ]
                 , [ zif 4, zif 5, zif 6, op "/" Geteilt ]
